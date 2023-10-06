@@ -78,3 +78,8 @@ button{
     padding-left: 10px;
     padding-right: 10px;
 }
+
+button:hover{
+    background-color: #1a8754;
+    color: white;
+}
