@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <h3>Navbar</h3>            
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#1a8754"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#1a8754" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#1a8754" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#1a8754" stroke-width="2" stroke-linecap="round"></path> </g></svg>
+            <ul>    
+                <li>
+                    <a class="home" href="home.html">Home</a>
+                </li>                    
+                <li>
+                    <a class="link" href="link.html">Link</a>
+                </li>
+                <li>
+                    <select name="dropdown-nav" id="dropdown-nav">Dropdown
+                        <option value="home">Dropdown</option>
+                        <option value="link">Link</option>                        
+                    </select>
+                </li>
+                <li>
+                    <a class="disabled" href="" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </div>
+        <div class="button">
+            <input type="text" placeholder="Search" name="search">
+            <button id="search">Search</button>
+        </div>
+    </nav>
+</body>
+</html>
