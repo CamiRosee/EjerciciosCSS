@@ -1,0 +1,362 @@
+
+/*Desktop View*/
+
+@media (min-width:769px) {
+   body{
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+   }
+   
+    .card{
+        background-image: linear-gradient(darkgray, beige);
+
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        width: 400px;
+        height: 600px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        border-radius: 30px;
+    }
+
+    .cardHeader{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+        height: 50px;
+
+        padding-top: 15px;
+    }
+
+    .headerLeft{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        padding-left: 10px;
+    }
+
+    .icon{
+        border-radius: 50%;
+
+        width: 50px;
+        height: 50px;
+    }
+
+    .nameDate{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        font-size: 13px;
+    }
+
+    .name{
+        margin: 0;
+    }
+
+    .date{
+        color: white;
+
+        margin: 0;
+    }
+
+
+    .headerRight{
+        padding-right: 10px;
+        padding-bottom: 15px;
+
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .imageContainer{
+        position: relative;
+
+        width: 100%;
+        height: 300px
+    }
+
+    .post{
+        position: absolute;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+    
+    .likeComment{
+        padding-left: 20px;
+    }
+
+    svg{
+        width: 24px;
+        height: 24px;
+    }
+
+    .content{
+        padding: 20px;
+        padding-top: 0px;
+    }
+
+    span{
+        font-weight: bold;
+    }
+
+}
+
+
+/*Tablet View - tuve que ajustar el tamaño de las cards para que entraran */
+@media (max-width: 768px){
+    body{
+        height: 100vh;
+        width: 100vw;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+       }
+       
+        .card{
+            background-image: linear-gradient(darkgray, beige);
+    
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+            width: 300px;
+            height: 500px;
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+    
+            border-radius: 30px;
+        }
+    
+        .cardHeader{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+    
+            width: 100%;
+            height: 50px;
+    
+            padding-top: 15px;
+        }
+    
+        .headerLeft{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+    
+            padding-left: 10px;
+        }
+    
+        .icon{
+            border-radius: 50%;
+    
+            width: 50px;
+            height: 50px;
+        }
+    
+        .nameDate{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+    
+            font-size: 13px;
+        }
+    
+        .name{
+            margin: 0;
+        }
+    
+        .date{
+            color: white;
+    
+            margin: 0;
+        }
+    
+    
+        .headerRight{
+            padding-right: 10px;
+            padding-bottom: 15px;
+    
+            font-size: 30px;
+            font-weight: bold;
+        }
+    
+        .imageContainer{
+            position: relative;
+    
+            width: 100%;
+            height: 300px
+        }
+    
+        .post{
+            position: absolute;
+    
+            width: 100%;
+            height: 100%;
+    
+            object-fit: cover;
+        }
+        
+        .likeComment{
+            padding-left: 20px;
+        }
+    
+        svg{
+            width: 24px;
+            height: 24px;
+        }
+    
+        .content{
+            padding: 20px;
+            padding-top: 0px;
+        }
+    
+        span{
+            font-weight: bold;
+        }
+
+}
+    
+
+
+/*Mobile View* - me queda un scroll horizontal que no quiero */
+
+@media (max-width: 375px){
+    body{
+        height: 100vh;
+        width: 100vw;
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+       }
+       
+        .card{
+            background-image: linear-gradient(darkgray, beige);
+    
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+            width: 300px;
+            height: 500px;
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+    
+            border-radius: 30px;
+        }
+    
+        .cardHeader{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+    
+            width: 100%;
+            height: 50px;
+    
+            padding-top: 15px;
+        }
+    
+        .headerLeft{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+    
+            padding-left: 10px;
+        }
+    
+        .icon{
+            border-radius: 50%;
+    
+            width: 50px;
+            height: 50px;
+        }
+    
+        .nameDate{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+    
+            font-size: 13px;
+        }
+    
+        .name{
+            margin: 0;
+        }
+    
+        .date{
+            color: white;
+    
+            margin: 0;
+        }
+    
+    
+        .headerRight{
+            padding-right: 10px;
+            padding-bottom: 15px;
+    
+            font-size: 30px;
+            font-weight: bold;
+        }
+    
+        .imageContainer{
+            position: relative;
+    
+            width: 100%;
+            height: 300px
+        }
+    
+        .post{
+            position: absolute;
+    
+            width: 100%;
+            height: 100%;
+    
+            object-fit: cover;
+        }
+        
+        .likeComment{
+            padding-left: 20px;
+        }
+    
+        svg{
+            width: 24px;
+            height: 24px;
+        }
+    
+        .content{
+            padding: 20px;
+            padding-top: 0px;
+        }
+    
+        span{
+            font-weight: bold;
+        }
+} 
